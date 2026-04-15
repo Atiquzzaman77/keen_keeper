@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Arif Ahmed",
+    "picture": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200",
+    "email": "arif.dev@example.com",
+    "days_since_contact": 25,
+    "status": "overdue",
+    "tags": ["College", "Tech Enthusiast"],
+    "bio": "A brilliant software engineer who helped me during my first React project. We usually discuss system design and open-source contributions.",
+    "goal": 14,
+    "next_due_date": "2026-04-05"
+  },
+  {
+    "id": 2,
+    "name": "Sabrina Khan",
+    "picture": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200",
+    "email": "sabrina.k@example.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["Close Friend", "Traveler"],
+    "bio": "Childhood best friend. She is passionate about photography and often shares her travel stories from around Bangladesh.",
+    "goal": 7,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 3,
+    "name": "Tanvir Hossain",
+    "picture": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200",
+    "email": "tanvir.h@example.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["Gym Buddy", "Neighbor"],
+    "bio": "A fitness enthusiast who keeps me motivated. We used to go to the same gym in Dinajpur before he moved to Dhaka.",
+    "goal": 14,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 4,
+    "name": "Rashedul Islam",
+    "picture": "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?auto=format&fit=crop&q=80&w=200",
+    "email": "rashed.islam@example.com",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": ["Work", "Mentor"],
+    "bio": "My first professional mentor. He taught me the importance of clean code and project management. Haven't spoken to him in a while.",
+    "goal": 30,
+    "next_due_date": "2026-03-01"
+  },
+  {
+    "id": 5,
+    "name": "Nabila Rahman",
+    "picture": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200",
+    "email": "nabila.r@example.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["University", "Artist"],
+    "bio": "An incredibly talented digital illustrator. We often collaborate on UI/UX projects where she handles the visual assets.",
+    "goal": 21,
+    "next_due_date": "2026-05-02"
+  },
+  {
+    "id": 6,
+    "name": "Sajid Hasan",
+    "picture": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=200",
+    "email": "sajid.hasan@example.com",
+    "days_since_contact": 9,
+    "status": "almost due",
+    "tags": ["Gaming", "Close Friend"],
+    "bio": "Competitive CS:GO player. We spent countless nights gaming together during the lockdown. He lives in Chittagong now.",
+    "goal": 10,
+    "next_due_date": "2026-04-17"
+  },
+  {
+    "id": 7,
+    "name": "Mehzabin Mim",
+    "picture": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=200",
+    "email": "mim.mehzabin@example.com",
+    "days_since_contact": 60,
+    "status": "overdue",
+    "tags": ["High School", "Old Friend"],
+    "bio": "A very kind person from my high school days. She is now pursuing a career in medicine. Definitely need to reconnect.",
+    "goal": 30,
+    "next_due_date": "2026-02-15"
+  },
+  {
+    "id": 8,
+    "name": "Imtiaz Rahim",
+    "picture": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200",
+    "email": "imtiaz.r@example.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["Family", "Brotherly"],
+    "bio": "More like a brother than a cousin. He is also learning web development and we often share interesting articles from Medium.",
+    "goal": 7,
+    "next_due_date": "2026-04-21"
+  }
+]
