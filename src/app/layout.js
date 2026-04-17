@@ -2,7 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-// ১. TimelineProvider ইম্পোর্ট করুন (পাথটি আপনার প্রজেক্ট অনুযায়ী চেক করে নিন)
+
 import { TimelineProvider } from "@/context/TimelineContext"; 
 
 const geistSans = Geist({
@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-base-200">
-        {/* ২. পুরো অ্যাপকে TimelineProvider দিয়ে র‍্যাপ করুন */}
+        
         <TimelineProvider>
           <Navbar />
           <main className="bg-base-200">
