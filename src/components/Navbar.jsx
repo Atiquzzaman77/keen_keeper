@@ -9,7 +9,7 @@ const Navbar = () => {
 
     
     const getBtnClass = (path) => 
-        `btn btn-sm md:btn-md flex items-center gap-2 border-none transition-all duration-300 rounded-full px-5 ${
+        `btn btn-sm md:btn-md flex items-center gap-2 border-none transition-all duration-300 rounded-xl px-5 ${
             pathname === path 
             ? 'bg-[#244D3F] text-white hover:bg-[#1a3a2f] shadow-md' 
             : 'bg-transparent text-gray-600 hover:bg-gray-100'

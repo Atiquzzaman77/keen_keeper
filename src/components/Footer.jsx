@@ -6,74 +6,73 @@ const Footer = () => {
         <footer className='bg-[#244D3F] py-10 md:py-16'>
             <div className='max-w-7xl mx-auto px-6 md:px-12'>
                 
-                
                 <div className='flex flex-col items-center text-center'>
                     
-                    
+                    {/* Brand Section */}
                     <div className='mb-10 w-full'>
-                        <h1 className='text-4xl sm:text-5xl md:text-7xl text-white tracking-tight'>
+                        <h1 className='text-4xl sm:text-5xl md:text-6xl text-white tracking-tight'>
                             <span className='font-extrabold'>Keen</span>
                             <span className='font-bold'>Keeper</span>
                         </h1>
-                        <p className='text-white/80 text-sm sm:text-base md:text-lg max-w-2xl mx-auto mt-6 leading-relaxed'>
+                        <p className='text-white/80 text-sm sm:text-base max-w-2xl mx-auto mt-4 leading-relaxed'>
                             Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.
                         </p>
                     </div>
 
-                    
+                    {/* Social Links Section */}
                     <div className='flex flex-col items-center gap-6 w-full'>
-                        <h3 className='text-white font-medium text-lg md:text-xl uppercase tracking-widest opacity-90'>
-                            Social Links
+                        <h3 className='text-white font-medium text-xs md:text-sm uppercase tracking-widest opacity-70'>
+                            Follow Our Journey
                         </h3>
-                        <div className='flex flex-wrap justify-center gap-4 md:gap-8'>
+                        <div className='flex flex-wrap justify-center gap-4 md:gap-6'>
                             
-                            
+                            {/* Instagram */}
                             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" 
-                               className="bg-white rounded-full hover:scale-110 transition-all duration-300 flex items-center justify-center w-14 h-14 md:w-20 md:h-20 shadow-xl border-4 border-white/10">
+                               className="bg-white/10 hover:bg-white rounded-full transition-all duration-300 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 shadow-lg backdrop-blur-sm group">
                                 <Image 
                                     src='/instagram.png' 
                                     alt='Instagram' 
-                                    width={32} 
-                                    height={32}
-                                    className="md:w-10.5 md:h-10.5"
+                                    width={24} 
+                                    height={24}
+                                    className="w-5 h-5 md:w-6 md:h-6 group-hover:invert-0 transition-all"
                                 />
                             </a>
 
-                            
+                            {/* Facebook */}
                             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" 
-                               className="bg-white rounded-full hover:scale-110 transition-all duration-300 flex items-center justify-center w-14 h-14 md:w-20 md:h-20 shadow-xl border-4 border-white/10">
+                               className="bg-white/10 hover:bg-white rounded-full transition-all duration-300 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 shadow-lg backdrop-blur-sm group">
                                 <Image 
                                     src='/facebook.png' 
                                     alt='Facebook' 
-                                    width={32} 
-                                    height={32}
-                                    className="md:w-10.5 md:h-10.5"
+                                    width={24} 
+                                    height={24}
+                                    className="w-5 h-5 md:w-6 md:h-6 group-hover:invert-0 transition-all"
                                 />
                             </a>
 
-                            
+                            {/* Twitter */}
                             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" 
-                               className="bg-white rounded-full hover:scale-110 transition-all duration-300 flex items-center justify-center w-14 h-14 md:w-20 md:h-20 shadow-xl border-4 border-white/10">
+                               className="bg-white/10 hover:bg-white rounded-full transition-all duration-300 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 shadow-lg backdrop-blur-sm group">
                                 <Image 
                                     src='/twitter.png' 
                                     alt='Twitter' 
-                                    width={32} 
-                                    height={32}
-                                    className="md:w-10.5 md:h-10.5"
+                                    width={24} 
+                                    height={24}
+                                    className="w-5 h-5 md:w-6 md:h-6 group-hover:invert-0 transition-all"
                                 />
                             </a>
                         </div>
                     </div>
                 </div>
 
-                
+                {/* Bottom Bar */}
                 <div className='border-t border-white/10 mt-16 pt-10'>
                     <div className='flex flex-col lg:flex-row justify-between items-center gap-6 text-center lg:text-left'>
-                        <p className='text-white/40 text-sm md:text-base'>
+                        <p className='text-white/40 text-sm'>
                             © {new Date().getFullYear()} <span className='text-white/60 font-semibold'>KeenKeeper</span>. All rights reserved.
                         </p>
                         
-                        <div className='flex flex-wrap justify-center gap-5 md:gap-10 text-xs md:text-sm font-medium'>
+                        <div className='flex flex-wrap justify-center gap-6 md:gap-10 text-xs font-medium'>
                             <a href="#" className='text-white/50 hover:text-white transition-colors duration-200'>Privacy Policy</a>
                             <a href="#" className='text-white/50 hover:text-white transition-colors duration-200'>Terms of Service</a>
                             <a href="#" className='text-white/50 hover:text-white transition-colors duration-200'>Cookie Policy</a>
