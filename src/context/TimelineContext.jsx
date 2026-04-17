@@ -7,12 +7,12 @@ const TimelineContext = createContext();
 export const TimelineProvider = ({ children }) => {
     const [events, setEvents] = useState([]);
 
-    // Action function to add new activity
+    
     const addEvent = (friendName, type) => {
         const newEvent = {
             id: Date.now(),
             friendName,
-            type, // Text, Call, or Video
+            type, 
             date: new Date().toLocaleString(),
         };
         setEvents((prev) => [newEvent, ...prev]);

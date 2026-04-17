@@ -8,7 +8,7 @@ const Footer = () => {
                 
                 <div className='flex flex-col items-center text-center'>
                     
-                    {/* Brand Section */}
+                    
                     <div className='mb-10 w-full'>
                         <h1 className='text-4xl sm:text-5xl md:text-6xl text-white tracking-tight'>
                             <span className='font-extrabold'>Keen</span>
@@ -19,14 +19,12 @@ const Footer = () => {
                         </p>
                     </div>
 
-                    {/* Social Links Section */}
+                    
                     <div className='flex flex-col items-center gap-6 w-full'>
-                        <h3 className='text-white font-medium text-xs md:text-sm uppercase tracking-widest opacity-70'>
-                            Follow Our Journey
-                        </h3>
+                        
                         <div className='flex flex-wrap justify-center gap-4 md:gap-6'>
                             
-                            {/* Instagram */}
+                            
                             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" 
                                className="bg-white/10 hover:bg-white rounded-full transition-all duration-300 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 shadow-lg backdrop-blur-sm group">
                                 <Image 
@@ -38,7 +36,7 @@ const Footer = () => {
                                 />
                             </a>
 
-                            {/* Facebook */}
+                        
                             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" 
                                className="bg-white/10 hover:bg-white rounded-full transition-all duration-300 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 shadow-lg backdrop-blur-sm group">
                                 <Image 
@@ -50,7 +48,7 @@ const Footer = () => {
                                 />
                             </a>
 
-                            {/* Twitter */}
+                            
                             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" 
                                className="bg-white/10 hover:bg-white rounded-full transition-all duration-300 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 shadow-lg backdrop-blur-sm group">
                                 <Image 
@@ -65,7 +63,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                {/* Bottom Bar */}
+                
                 <div className='border-t border-white/10 mt-16 pt-10'>
                     <div className='flex flex-col lg:flex-row justify-between items-center gap-6 text-center lg:text-left'>
                         <p className='text-white/40 text-sm'>
