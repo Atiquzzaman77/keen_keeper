@@ -3,16 +3,16 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation'; // Navigation এর জন্য
+import { useRouter } from 'next/navigation'; 
 import {
     ArrowLeft, Mail, Calendar, Trash,
     MessageSquare, Phone, Video,
     Archive
 } from 'lucide-react';
 import toast, { Toaster } from 'react-hot-toast';
-import { useTimeline } from '@/context/TimelineContext'; // Context Import
+import { useTimeline } from '@/context/TimelineContext'; 
 
-// Static Data (In a real app, this might come from an API)
+
 const friendsData = [
     { "id": 1, "name": "Arif Ahmed", "picture": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200", "email": "arif.dev@example.com", "days_since_contact": 25, "status": "overdue", "tags": ["College", "Tech Enthusiast"], "bio": "A brilliant software engineer who helped me during my first React project.", "goal": 14, "next_due_date": "2026-04-05" },
     { "id": 2, "name": "Sabrina Khan", "picture": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200", "email": "sabrina.k@example.com", "days_since_contact": 3, "status": "on-track", "tags": ["Close Friend", "Traveler"], "bio": "Childhood best friend. She is passionate about photography.", "goal": 7, "next_due_date": "2026-04-20" },
@@ -27,7 +27,7 @@ const friendsData = [
 const FriendDetails = ({ params }) => {
     const { friendId } = React.use(params);
     const router = useRouter();
-    const { addEvent } = useTimeline(); // Context এর ফাংশন কল করা হলো
+    const { addEvent } = useTimeline(); 
 
     const friend = friendsData.find(f => f.id === parseInt(friendId));
 
@@ -43,10 +43,10 @@ const FriendDetails = ({ params }) => {
     }
 
     const handleAction = (actionType) => {
-        // ১. টাইমলাইনে ডেটা অ্যাড করা হচ্ছে
+        
         addEvent(friend.name, actionType);
 
-        // ২. সাকসেস টোস্ট দেখানো হচ্ছে
+        
         toast.success(`${actionType} initiated for ${friend.name}!`, {
             style: {
                 borderRadius: '12px',
@@ -71,7 +71,7 @@ const FriendDetails = ({ params }) => {
                 </Link>
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
-                    {/* LEFT PANEL */}
+                    
                     <div className="lg:col-span-4 flex flex-col gap-4">
                         <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100 flex flex-col items-center text-center grow">
                             <div className="relative mb-2">
@@ -123,7 +123,7 @@ const FriendDetails = ({ params }) => {
                         </div>
                     </div>
 
-                    {/* RIGHT PANEL */}
+                    
                     <div className="lg:col-span-8 flex flex-col gap-6">
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 font-sans">
                             <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-center">
@@ -150,7 +150,7 @@ const FriendDetails = ({ params }) => {
                             </p>
                         </div>
 
-                        {/* Quick Check-In Section */}
+                        
                         <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200 grow">
                             <div className="max-w-xl">
                                 <h3 className="text-xl font-bold text-gray-800 mb-4">Quick Check-In</h3>
