@@ -3,14 +3,14 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation'; 
+import { useRouter } from 'next/navigation';
 import {
     ArrowLeft, Mail, Calendar, Trash,
     MessageSquare, Phone, Video,
     Archive
 } from 'lucide-react';
 import toast, { Toaster } from 'react-hot-toast';
-import { useTimeline } from '@/context/TimelineContext'; 
+import { useTimeline } from '@/context/TimelineContext';
 
 
 const friendsData = [
@@ -27,7 +27,7 @@ const friendsData = [
 const FriendDetails = ({ params }) => {
     const { friendId } = React.use(params);
     const router = useRouter();
-    const { addEvent } = useTimeline(); 
+    const { addEvent } = useTimeline();
 
     const friend = friendsData.find(f => f.id === parseInt(friendId));
 
@@ -43,10 +43,10 @@ const FriendDetails = ({ params }) => {
     }
 
     const handleAction = (actionType) => {
-        
+
         addEvent(friend.name, actionType);
 
-        
+
         toast.success(`${actionType} initiated for ${friend.name}!`, {
             style: {
                 borderRadius: '12px',
@@ -57,8 +57,8 @@ const FriendDetails = ({ params }) => {
             icon: '✅',
         });
 
-        
-        
+
+
     };
 
     return (
@@ -71,7 +71,7 @@ const FriendDetails = ({ params }) => {
                 </Link>
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
-                    
+
                     <div className="lg:col-span-4 flex flex-col gap-4">
                         <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100 flex flex-col items-center text-center grow">
                             <div className="relative mb-2">
@@ -84,16 +84,14 @@ const FriendDetails = ({ params }) => {
                                 />
                                 <span className={`absolute bottom-2 right-2 px-3 py-1 rounded-full text-[10px] font-bold uppercase border-2 border-white shadow-sm ${friend.status === 'overdue' ? 'bg-red-500 text-white' :
                                     friend.status === 'almost due' ? 'bg-amber-400 text-white' :
-                                    'bg-emerald-500 text-white'
+                                        'bg-emerald-500 text-white'
                                     }`}>
                                     {friend.status}
                                 </span>
                             </div>
 
                             <h2 className="font-bold text-2xl text-gray-800 mb-1">{friend.name}</h2>
-                            <p className="text-gray-400 text-sm mb-5 flex items-center gap-1.5">
-                                <Mail size={14} /> {friend.email}
-                            </p>
+
 
                             <div className="flex flex-wrap justify-center gap-2 mb-6">
                                 {friend.tags.map((tag, i) => (
@@ -106,6 +104,9 @@ const FriendDetails = ({ params }) => {
                             <div className="bg-gray-50 p-5 rounded-xl w-full">
                                 <p className="text-gray-600 text-sm italic leading-relaxed">
                                     &quot;{friend.bio}&quot;
+                                </p>
+                                <p className="text-gray-400 text-sm mb-5 flex justify-center items-center gap-1.5 text-center">
+                                    <Mail size={14} /> {friend.email}
                                 </p>
                             </div>
                         </div>
@@ -123,7 +124,7 @@ const FriendDetails = ({ params }) => {
                         </div>
                     </div>
 
-                    
+
                     <div className="lg:col-span-8 flex flex-col gap-6">
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 font-sans">
                             <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-center">
@@ -141,16 +142,16 @@ const FriendDetails = ({ params }) => {
                         </div>
 
                         <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
-                           <div className='flex justify-between items-center'>
-                             <h3 className="text-xl font-bold text-gray-800 mb-2">Relationship Goals</h3>
-                             <button className='btn btn-ghost btn-sm border-gray-200'>Edit</button>
-                           </div>
+                            <div className='flex justify-between items-center'>
+                                <h3 className="text-xl font-bold text-gray-800 mb-2">Relationship Goals</h3>
+                                <button className='btn btn-ghost btn-sm border-gray-200'>Edit</button>
+                            </div>
                             <p className="text-gray-500 text-sm leading-relaxed">
                                 Connect Every <b>{friend.goal} days</b>
                             </p>
                         </div>
 
-                        
+
                         <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200 grow">
                             <div className="max-w-xl">
                                 <h3 className="text-xl font-bold text-gray-800 mb-4">Quick Check-In</h3>
