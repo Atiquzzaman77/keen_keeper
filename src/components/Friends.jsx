@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 // Static Friends Data
@@ -114,7 +115,7 @@ const Friends = () => {
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                     {friendsData.map((friend) => (
-                        <div key={friend.id} className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all border border-gray-100 flex flex-col h-full group">
+                        <Link href={`/friends/${friend.id}`} key={friend.id} className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all border border-gray-100 flex flex-col h-full group">
                             
                             
                             <div className="flex flex-col items-center justify-center mb-4">
@@ -158,7 +159,7 @@ const Friends = () => {
                                     </span>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>
